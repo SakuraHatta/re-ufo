@@ -18,10 +18,10 @@ public class PlayerController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        move();     // 左右移動
+        playerMove();     // 左右移動
     }
 
-    private void move(){
+    private void playerMove(){
         if (Input.GetKey("left")){
             pos.x -= speed * Time.deltaTime;
         }else if (Input.GetKey("right")){
