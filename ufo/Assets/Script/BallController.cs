@@ -25,7 +25,7 @@ public class BallController : MonoBehaviour
 
     private void ballMove(){
         pos.y += speed * Time.deltaTime;
-        this.transform.position = new Vector2(pos.x, pos.y);
+        this.transform.position = pos;
     }
 
     private void ballDestroy(){

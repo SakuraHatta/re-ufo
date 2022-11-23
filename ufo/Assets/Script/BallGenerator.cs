@@ -9,7 +9,7 @@ public class BallGenerator : MonoBehaviour
     */
 
     [SerializeField]
-    private GameObject ball;
+    private GameObject ballPrefab;
     
     private Vector2 pos;
 
@@ -28,7 +28,7 @@ public class BallGenerator : MonoBehaviour
     private void ballShoot(){
         if(Input.GetKeyDown(KeyCode.Space)){
             pos = this.transform.position;
-            Instantiate(ball, new Vector2(pos.x, -3.25f), Quaternion.identity);
+            Instantiate(ballPrefab, new Vector2(pos.x, -3.25f), Quaternion.identity);
         }
     }
 }
