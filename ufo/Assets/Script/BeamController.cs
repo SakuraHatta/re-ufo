@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class BallController : MonoBehaviour
+public class BeamController : MonoBehaviour
 {
     [SerializeField]
     private float speed;
@@ -18,26 +18,26 @@ public class BallController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        ballMove();     // 弾の移動
-        ballDestroy();  // 画面外で消去
-
+        beamMove();
+        beamDestroy();
     }
 
-    private void ballMove(){
-        pos.y += speed * Time.deltaTime;
+    private void beamMove(){
+        pos.y -= speed * Time.deltaTime;
         this.transform.position = new Vector2(pos.x, pos.y);
     }
 
-    private void ballDestroy(){
-        if (pos.y > 5.15f){
+    private void beamDestroy(){
+        if (pos.y < -4.0f){
             Destroy(this.gameObject);
         }
     }
-    
-    // ufoに当たったら消去
+
+    // cannonに当たったら消去
     private void OnTriggerEnter2D(Collider2D other){
-        if (other.gameObject.tag == "ufo"){
+        if (other.gameObject.tag == "cannon"){
             Destroy(this.gameObject);
         }
     }
+
 }
