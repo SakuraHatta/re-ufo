@@ -22,9 +22,9 @@ public class PlayerController : MonoBehaviour
     }
 
     private void playerMove(){
-        if (Input.GetKey("left")){
+        if (Input.GetKey("left") || Input.GetKey("a")){
             pos.x -= speed * Time.deltaTime;
-        }else if (Input.GetKey("right")){
+        }else if (Input.GetKey("right") || Input.GetKey("d")){
             pos.x += speed * Time.deltaTime;
         }
         if (pos.x <= -8.2f){
