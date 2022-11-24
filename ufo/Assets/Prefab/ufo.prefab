@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 3905233323552718412}
   - component: {fileID: -5332157713630754826}
   - component: {fileID: 4025897355326363218}
+  - component: {fileID: 4860712826678465008}
   m_Layer: 0
   m_Name: ufo
   m_TagString: ufo
@@ -137,3 +138,17 @@ CapsuleCollider2D:
   m_Offset: {x: 0.0013345233, y: -0.2084758}
   m_Size: {x: 1.3708731, y: 0.6401207}
   m_Direction: 1
+--- !u!114 &4860712826678465008
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3905233323552718409}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2287925c02b1b6b4190dfebac2cc9972, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  beamPrefab: {fileID: 1667760944616849874, guid: 14cba06c9186e344195b0a705e6c3ef9, type: 3}
+  span: 1
