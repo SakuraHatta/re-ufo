@@ -33,4 +33,11 @@ public class UfoController : MonoBehaviour
             Destroy(this.gameObject);
         }
     }
+
+    // ballに当たったら消去
+    private void OnTriggerEnter2D(Collider2D other){
+        if (other.gameObject.tag == "ball"){
+            Destroy(this.gameObject);
+        }
+    }
 }
