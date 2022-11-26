@@ -433,6 +433,7 @@ GameObject:
   - component: {fileID: 919620246}
   - component: {fileID: 919620245}
   - component: {fileID: 919620244}
+  - component: {fileID: 919620248}
   m_Layer: 0
   m_Name: cannon
   m_TagString: cannon
@@ -602,6 +603,22 @@ CapsuleCollider2D:
   m_Offset: {x: -0.020136893, y: 0.09830606}
   m_Size: {x: 0.736415, y: 1.2006023}
   m_Direction: 0
+--- !u!114 &919620248
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 919620239}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2b68c2d259bc2a24cb5348d17d054ec6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  spriteRender: {fileID: 919620241}
+  Sprite1: {fileID: 21300000, guid: 90d79508833323549857f7fbcc783f3f, type: 3}
+  Sprite2: {fileID: 21300000, guid: 6c7077f3a399ac4479d61308b12cb9f1, type: 3}
+  hpCount: 2
 --- !u!1 &1444067712
 GameObject:
   m_ObjectHideFlags: 0

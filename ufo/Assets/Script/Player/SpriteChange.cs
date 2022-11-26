@@ -5,13 +5,13 @@ using UnityEngine;
 public class SpriteChange : MonoBehaviour
 {
     [SerializeField]
-    private GameObject cannonSprite;
+    private SpriteRenderer spriteRender;
     [SerializeField]
-    private Sprite secondSprite;
+    private Sprite Sprite1;
     [SerializeField]
-    private Sprite thirdSprite;
+    private Sprite Sprite2;
 
-    private int hpCount;
+    public int hpCount = 2;
 
     // Start is called before the first frame update
     void Start()
@@ -22,12 +22,18 @@ public class SpriteChange : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+        cannonChange();
+    }
+
+    private void cannonChange(){
+        if (hpCount == 1){
+            spriteRender.sprite = Sprite2;
+        }
     }
 
     private void OnTriggerEnter2D(Collider2D other){
         if (other.gameObject.tag == "beam"){
-            
+            hpCount -= 1;
         }
     }
 }
