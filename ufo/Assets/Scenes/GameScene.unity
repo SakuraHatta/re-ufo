@@ -499,7 +499,7 @@ SpriteRenderer:
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 2.1, y: 2.1}
+  m_Size: {x: 1.44, y: 1.44}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
@@ -567,9 +567,9 @@ CircleCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.40218306, y: -0.422009}
+  m_Offset: {x: 0.36863035, y: -0.42793006}
   serializedVersion: 2
-  m_Radius: 0.29799122
+  m_Radius: 0.29799145
 --- !u!58 &919620246
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -583,9 +583,9 @@ CircleCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.35969877, y: -0.40784746}
+  m_Offset: {x: -0.3919989, y: -0.42772442}
   serializedVersion: 2
-  m_Radius: 0.30365568
+  m_Radius: 0.2912326
 --- !u!70 &919620247
 CapsuleCollider2D:
   m_ObjectHideFlags: 0
@@ -599,8 +599,8 @@ CapsuleCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.0071310103, y: 0.11409533}
-  m_Size: {x: 0.7424746, y: 1.1690238}
+  m_Offset: {x: -0.020136893, y: 0.09830606}
+  m_Size: {x: 0.736415, y: 1.2006023}
   m_Direction: 0
 --- !u!1 &1444067712
 GameObject:
