@@ -27,7 +27,7 @@ public class UfoGenerator : MonoBehaviour
         time += Time.deltaTime;
         if(time > span){
             time = 0;
-            px = Random.Range(-8, 8);
+            px = Random.Range(-7, 8);
             Instantiate(ufoPrefab, new Vector2(px, 4.3f), Quaternion.identity);
         }
     }

@@ -9,10 +9,16 @@ public class BallController : MonoBehaviour
 
     private Vector2 pos;
 
+    /*[SerializeField]
+    private GameObject ScoreManager;
+    private ScoreController scoreController;*/
+
     // Start is called before the first frame update
     void Start()
     {
         pos = this.transform.position;
+
+        //scoreController = ScoreManager.GetComponent<ScoreController>();
     }
 
     // Update is called once per frame
@@ -38,6 +44,7 @@ public class BallController : MonoBehaviour
     private void OnTriggerEnter2D(Collider2D other){
         if (other.gameObject.tag == "ufo"){
             Destroy(this.gameObject);
-        }
+            GameObject.Find("ScoreManager").GetComponent<ScoreController>().AddScore();     // スコア追加
+        } 
     }
 }

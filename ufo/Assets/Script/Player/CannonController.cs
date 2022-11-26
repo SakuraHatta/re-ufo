@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class PlayerController : MonoBehaviour
+public class CannonController : MonoBehaviour
 {
     [SerializeField]
     private float speed = 0.0f;
