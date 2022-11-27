@@ -7,11 +7,13 @@ public class SpriteChange : MonoBehaviour
     [SerializeField]
     private SpriteRenderer spriteRender;
     [SerializeField]
-    private Sprite Sprite1;
+    private Sprite sprite1;
     [SerializeField]
-    private Sprite Sprite2;
+    private Sprite sprite2;
+    [SerializeField]
+    private Sprite sprite3;
 
-    public int hpCount = 2;
+    public int hpCount = 3;
 
     // Start is called before the first frame update
     void Start()
@@ -26,8 +28,11 @@ public class SpriteChange : MonoBehaviour
     }
 
     private void cannonChange(){
+        if (hpCount == 2){
+            spriteRender.sprite = sprite2;
+        }
         if (hpCount == 1){
-            spriteRender.sprite = Sprite2;
+            spriteRender.sprite = sprite3;
         }
     }
 

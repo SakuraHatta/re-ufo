@@ -616,9 +616,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   spriteRender: {fileID: 919620241}
-  Sprite1: {fileID: 21300000, guid: 90d79508833323549857f7fbcc783f3f, type: 3}
-  Sprite2: {fileID: 21300000, guid: 6c7077f3a399ac4479d61308b12cb9f1, type: 3}
-  hpCount: 2
+  sprite1: {fileID: 21300000, guid: 90d79508833323549857f7fbcc783f3f, type: 3}
+  sprite2: {fileID: 21300000, guid: 6c7077f3a399ac4479d61308b12cb9f1, type: 3}
+  sprite3: {fileID: 21300000, guid: 8cc6e5f45eca9064792b6439c3da02ec, type: 3}
+  hpCount: 3
 --- !u!1 &1444067712
 GameObject:
   m_ObjectHideFlags: 0
