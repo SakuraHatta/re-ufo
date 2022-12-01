@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class SpriteChange : MonoBehaviour
+public class HpController : MonoBehaviour
 {
     [SerializeField]
     private SpriteRenderer spriteRender;
@@ -13,7 +13,7 @@ public class SpriteChange : MonoBehaviour
     [SerializeField]
     private Sprite sprite3;
 
-    public int hpCount = 3;
+    public int HpCount = 3;
 
     // Start is called before the first frame update
     void Start()
@@ -28,17 +28,17 @@ public class SpriteChange : MonoBehaviour
     }
 
     private void cannonChange(){
-        if (hpCount == 2){
+        if (HpCount == 2){
             spriteRender.sprite = sprite2;
         }
-        if (hpCount == 1){
+        if (HpCount == 1){
             spriteRender.sprite = sprite3;
         }
     }
 
     private void OnTriggerEnter2D(Collider2D other){
         if (other.gameObject.tag == "beam"){
-            hpCount -= 1;
+            HpCount -= 1;
         }
     }
 }
