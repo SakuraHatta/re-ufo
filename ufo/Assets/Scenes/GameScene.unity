@@ -469,6 +469,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   sceneController: {fileID: 466182714}
   hpController: {fileID: 919620248}
+  ufoController: {fileID: 3905233323552718412, guid: 3570dc2495b4aff47bf0ad3fc9d80b14, type: 3}
 --- !u!1 &537211714
 GameObject:
   m_ObjectHideFlags: 0

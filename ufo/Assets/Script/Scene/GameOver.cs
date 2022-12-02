@@ -8,6 +8,8 @@ public class GameOver : MonoBehaviour
     private SceneController sceneController;
     [SerializeField]
     private HpController hpController;
+    [SerializeField]
+    private UfoController ufoController;
 
     
     // Start is called before the first frame update
@@ -23,6 +25,11 @@ public class GameOver : MonoBehaviour
     }
 
     private void gameOver(){
+        if (ufoController.Alien){   // ここに問題あり
+            Debug.Log("gameover");
+            sceneController.GameOver = true;
+        }
+
         if (hpController.HpCount == 0){
             sceneController.GameOver = true;
         }

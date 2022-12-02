@@ -45,7 +45,7 @@ public class SceneController : MonoBehaviour
             // GameSceneからEndSceneに移動
             if (GameOver){
                 SceneMove = false;
-                    fadeController.FadeOutStart(0, 0, 0, 0, "EndScene");
+                fadeController.FadeOutStart(0, 0, 0, 0, "EndScene");
             }
         }
     }

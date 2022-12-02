@@ -9,6 +9,9 @@ public class UfoController : MonoBehaviour
 
     private Vector2 pos;
 
+    public bool Alien = false;
+    private bool move = true;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -23,14 +26,18 @@ public class UfoController : MonoBehaviour
     }
 
     private void ufoMove(){
-        pos.x += Mathf.Sin(Time.time) * Time.deltaTime;
-        pos.y -= speed * Time.deltaTime;
-        this.transform.position = pos;
+        if (move){
+            pos.x += Mathf.Sin(Time.time) * Time.deltaTime;
+            pos.y -= speed * Time.deltaTime;
+            this.transform.position = pos;
+        }
     }
 
     private void ufoDestroy(){
         if (pos.y < -3.7f){
-            Destroy(this.gameObject);
+            move = false;
+            Alien = true;
+            //Destroy(this.gameObject);
         }
     }
 
