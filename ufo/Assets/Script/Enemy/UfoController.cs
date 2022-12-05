@@ -9,13 +9,15 @@ public class UfoController : MonoBehaviour
 
     private Vector2 pos;
 
-    public bool Alien = false;
     private bool move = true;
+
+    private SceneController sceneController;
 
     // Start is called before the first frame update
     void Start()
     {
         pos = this.transform.position;
+        sceneController = GameObject.Find("SceneManager").GetComponent<SceneController>();
     }
 
     // Update is called once per frame
@@ -36,7 +38,7 @@ public class UfoController : MonoBehaviour
     private void ufoDestroy(){
         if (pos.y < -3.7f){
             move = false;
-            Alien = true;
+            sceneController.GameOver = true;
             //Destroy(this.gameObject);
         }
     }

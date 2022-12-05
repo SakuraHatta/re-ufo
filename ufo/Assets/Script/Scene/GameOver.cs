@@ -25,10 +25,10 @@ public class GameOver : MonoBehaviour
     }
 
     private void gameOver(){
-        if (ufoController.Alien){   // ここに問題あり
+        /*if (ufoController.Alien){   // ここに問題あり
             Debug.Log("gameover");
             sceneController.GameOver = true;
-        }
+        }*/
 
         if (hpController.HpCount == 0){
             sceneController.GameOver = true;
