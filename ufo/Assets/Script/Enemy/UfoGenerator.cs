@@ -9,7 +9,7 @@ public class UfoGenerator : MonoBehaviour
     [SerializeField]
     private float span;
     private float time = 0;
-    private int px;
+    private Vector2 pos;
 
     // Start is called before the first frame update
     void Start()
@@ -27,8 +27,9 @@ public class UfoGenerator : MonoBehaviour
         time += Time.deltaTime;
         if(time > span){
             time = 0;
-            px = Random.Range(-7, 8);
-            Instantiate(ufoPrefab, new Vector2(px, 4.3f), Quaternion.identity);
+            pos.x = Random.Range(-7, 8);
+            pos.y = 4.5f;
+            Instantiate(ufoPrefab, pos, Quaternion.identity);
         }
     }
 }

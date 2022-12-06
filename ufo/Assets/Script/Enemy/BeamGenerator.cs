@@ -32,7 +32,8 @@ public class BeamGenerator : MonoBehaviour
         time += Time.deltaTime;
         if(time > span){
             time = 0;
-            pos = this.transform.position;
+            pos.x = this.transform.position.x;
+            pos.y = this.transform.position.y - 0.7f;
             Instantiate(beamPrefab, pos, Quaternion.identity);
         }
     }
