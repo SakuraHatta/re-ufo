@@ -3,21 +3,20 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class ScoreController : MonoBehaviour
+public class ScoreDisplay : MonoBehaviour
 {
-    public static int score = 0;
-
     [SerializeField]
     private Text scoreText;
 
     // Start is called before the first frame update
     void Start()
     {
-        score = 0;
+        scoreText.text = ScoreController.score.ToString() + "pt";
     }
 
-    public void AddScore(){
-        score += 10;
-        scoreText.text = score.ToString() + "pt";
+    // Update is called once per frame
+    void Update()
+    {
+        
     }
 }
